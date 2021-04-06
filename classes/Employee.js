@@ -18,7 +18,7 @@ class Employee {
     }
     getEmail(){
         //this.email = employee.email
-        return `<li class="list-group-item"><a href="mailto: ${this.email}" class="card-link">Email: ${this.email}</a></li>`
+        return `<li class="list-group-item"><a href="mailto: ${this.email}" class="card-link">Email</a></li>`
     }
     getRole(){
         return 'Employee'

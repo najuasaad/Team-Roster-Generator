@@ -2,6 +2,7 @@ const Manager = require("./classes//Manager");
 const Engineer = require("./classes/Engineer");
 const Intern = require("./classes/Intern");
 const inquirer = require('inquirer');
+
 const fs = require('fs')
 
 const initQuestions = [
@@ -219,7 +220,7 @@ const createHtml = () => {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
         <!-- add font awesome in and find icons for different jobs -->
         <script src="https://kit.fontawesome.com/a5e1c610e2.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="assets/style.css">
+        <link rel="stylesheet" href="style.css">
         <title>Document</title>
     </head>
     <body>
@@ -241,7 +242,13 @@ const createHtml = () => {
 }
 
 const createStyle = () => {
-    return ""
+    return `a {
+        color: #a08300
+    }
+    
+    body {
+        background-color: #fffbf0
+    }`
 }
 
 const makeFile = () => {
